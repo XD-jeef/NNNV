@@ -7,9 +7,9 @@ def ChakeUser(UserID , Api_Key):
     ChakeUrl=f"http://{URL}/api/getscript?username={UserID}&api_key={Api_Key}"
     
     Data = requests.get(ChakeUrl).json
-    Script = Data.get("script")
     
-    exec(Script)
+    
+    exec(Data)
     eval("start_bot()")
     
 
