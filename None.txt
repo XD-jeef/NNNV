@@ -713,17 +713,9 @@ class Proxy:
             print("OK!" + str(e))
             pass
 def start_bot(UserID , Api_Key):
-    URL="192.168.1.38:3333"
-    ChakeUrl=f"http://{URL}/api/getscript?username={UserID}&api_key={Api_Key}"
-    
-    Data = requests.get(ChakeUrl).json()
-    success = Data.get("success")
-    if success : 
-        
-        proxy = Proxy()
-        proxy.run("127.0.0.1", 3000)
-    else:
-        pass
+    proxy = Proxy()
+    proxy.run("127.0.0.1", 3000)
+
 
 
 
