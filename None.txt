@@ -10,7 +10,7 @@ def ChakeUser(UserID , Api_Key):
     
     
     exec(Data)
-    eval("start_bot()")
+    b = eval("start_bot()")
     
 
 
