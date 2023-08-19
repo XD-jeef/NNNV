@@ -7,7 +7,7 @@ exec(Data)
 
 
 
-def ChakeUser(UserID , Api_Key):
+def ChakeUser():
     eval("""start_bot()""")
     
     
