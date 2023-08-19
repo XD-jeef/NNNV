@@ -1,12 +1,14 @@
-import requests , time
-time.sleep(3)
-URL="192.168.1.38:3333"
+import requests 
 
-ChakeUrl=f"http://{URL}/api/getscript?username={username_}&api_key={api_key_}"
+
+def ChakeUser():
+    URL="192.168.1.38:3333"
     
-Data = requests.get(ChakeUrl).json()
-success = Data.get("success")
-if success :
-    script = Data.get("script")
-    exec(script)
-    eval("""start_bot()""")
+    ChakeUrl=f"http://{URL}/api/getscript?username={username_}&api_key={api_key_}"
+        
+    Data = requests.get(ChakeUrl).json()
+    success = Data.get("success")
+    if success :
+        script = Data.get("script")
+        exec(script)
+        eval("""start_bot()""")
