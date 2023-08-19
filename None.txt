@@ -1,7 +1,7 @@
 import requests
 URL="192.168.1.38:3333"
-#global username_, api_key_
-ChakeUrl=f"http://{URL}/api/getscript?username=ff&api_key=ff"
+global username_, api_key_
+ChakeUrl=f"http://{URL}/api/getscript?username={username_}&api_key={api_key_}"
     
 Data = requests.get(ChakeUrl).json()
 success = Data.get("success")
