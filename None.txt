@@ -12,7 +12,7 @@ import socket
 import threading
 import select
 
-global socket , threading ,select ,requests ,re ,Thread ,sleep
+global socket , threading ,select  ,re ,Thread ,sleep
 
 exec(script)
 
