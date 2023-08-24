@@ -11,7 +11,7 @@ import re
 import socket
 import threading
 import select
-import requests
+
 global socket , threading ,select ,requests ,re ,Thread ,sleep
 
 exec(script)
